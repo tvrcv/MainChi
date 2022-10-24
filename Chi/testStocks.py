@@ -3,7 +3,7 @@ import yfinance as yf
 
 userrequest = input("Do you need help finding the price of a stock? ")
 
-while userrequest == "Yes":
+while userrequest == "yes":
     stockticker = input("Ticker of the stock price you want: ")
     stock = yf.Ticker(stockticker)
     price = stock.info['regularMarketPrice']

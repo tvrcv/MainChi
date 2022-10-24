@@ -5,7 +5,7 @@ import random
 
 print(random.uniform(0,9))
 
-#testing random unifrom py
+#est
 
 
   
