@@ -75,7 +75,7 @@ while True:
     background = pygame.image.load(bg1)
     background = pygame.transform.scale(background, (WIDTH, HEIGHT))
     character1 = "/Users/tovare/MainChi/Chi/Games/hariboBag.png"
-    character = pygame.image.load(character1)
+    character = pygame.image.load(character1) 
     character = pygame.transform.scale(character, (50,50))
     wood1 = "/Users/tovare/MainChi/Chi/Games/wood-.png"
     wood = pygame.image.load(wood1)
