@@ -6,11 +6,11 @@ import time
 #initializing window
 pygame.init()
 WIDTH = 800
-HEIGHT = 600
+HEIGHT = 800
 black=(0,0,0)
 gameDisplay = pygame.display.set_mode((WIDTH, HEIGHT))#setting game display size
-pygame.display.set_caption('DataFlair- Keyboard Jump Game')
-bg1 = "/Users/tovare/MainChi/Chi/Games/keyback.jpg"
+pygame.display.set_caption('DataFlair- Typing Survival Game')
+bg1 = "/Users/tovare/MainChi/Chi/Games/tatryBG.png"
 background = pygame.image.load(bg1)
 background = pygame.transform.scale(background, (WIDTH, HEIGHT))  #scale image 
 font1 = "/Users/tovare/MainChi/Chi/Games/comic.ttf"
@@ -49,7 +49,7 @@ def game_front_screen():
         draw_text(gameDisplay, "GAME OVER!", 90, WIDTH / 2, HEIGHT / 4)
         draw_text(gameDisplay,"Score : " + str(score), 70, WIDTH / 2, HEIGHT /2)
     else:
-        draw_text(gameDisplay, "Press a key to begin!", 54, WIDTH / 2, 500)
+        draw_text(gameDisplay, "Press a key to begin!", 70, WIDTH / 2, 100)
     pygame.display.flip()
     waiting = True
     while waiting:
@@ -72,9 +72,9 @@ while True:
     game_over = False
 
     bg2 = "/Users/tovare/MainChi/Chi/Games/teacher-background.jpg"
-    background = pygame.image.load(bg2)
+    background = pygame.image.load(bg1)
     background = pygame.transform.scale(background, (WIDTH, HEIGHT))
-    character1 = "/Users/tovare/MainChi/Chi/Games/char.jpg"
+    character1 = "/Users/tovare/MainChi/Chi/Games/hariboBag.png"
     character = pygame.image.load(character1)
     character = pygame.transform.scale(character, (50,50))
     wood1 = "/Users/tovare/MainChi/Chi/Games/wood-.png"
@@ -88,7 +88,7 @@ while True:
     gameDisplay.blit(wood,(x_cor-50,y_cor+15))
     gameDisplay.blit(character,(x_cor-100,y_cor))
     draw_text(gameDisplay, str(displayword), 40, x_cor, y_cor)
-    draw_text(gameDisplay, 'Score:'+str(score), 40, WIDTH/2 , 5)
+    draw_text(gameDisplay, 'Score:'+str(score), 60, WIDTH/2 , 50)
 
     
     for event in pygame.event.get():
