@@ -22,6 +22,8 @@ font = pygame.font.Font(font1, 40)
 word_speed = 0.5
 score = 0
 
+# testing swhats up with the new git
+
 
 def new_word():
     global displayword, yourword, x_cor, y_cor, text, word_speed
