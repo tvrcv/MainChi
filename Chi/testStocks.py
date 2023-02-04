@@ -8,19 +8,10 @@ while userrequest == "yes":
     stock = yf.Ticker(stockticker)
     price = stock.info['regularMarketPrice']
     print(price)
-    
-    userrequest = input("Do you need further help finding the price of a stock? ") 
+
+    userrequest = input(
+        "Do you need further help finding the price of a stock? ")
 
 print("See you around !")
 
-
-
-
-
- 
-
-
-
- 
- 
-
+# gotta chek the yf.Ticker thing, not pulling stock prices
