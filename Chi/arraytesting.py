@@ -4,21 +4,21 @@ def _sum(arra):
 
     for i in arr:
         sum = sum + i
- 
+
     return(sum)
 
-arr= []
-arr = [12, 3, 4, 15]
+
+arr = []
+arr = [22, 3, 4, 15]
 
 n = len(arr)
- 
+
 ans = _sum(arr)
- 
+
 # display sum
-print('Sum of the array is ', ans)
+print('Sum of the array #1 is', ans)
 
 
-numbers = [1,2,3,4,5,1,4,5]
+numbers = [1, 2, 3, 32, 5, 12, 4, 5]
 Sum = sum(numbers)
-print(Sum)
-
+print('Sum of the array #2 is', Sum)
