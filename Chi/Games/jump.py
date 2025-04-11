@@ -4,17 +4,18 @@ import random
 import time
 
 # initializing window
+
 pygame.init()
 WIDTH = 800
-HEIGHT = 800
+HEIGHT = 800  
 black = (0, 0, 0)
 gameDisplay = pygame.display.set_mode(
     (WIDTH, HEIGHT))  # setting game display size
 pygame.display.set_caption('DataFlair- Typing Survival Game')
-bg1 = "/Users/tovare/MainChi/Chi/Games/tatryBG.png"
+bg1 = "tatryBG.png"
 background = pygame.image.load(bg1)
 background = pygame.transform.scale(background, (WIDTH, HEIGHT))  # scale image
-font1 = "/Users/tovare/MainChi/Chi/Games/comic.ttf"
+font1 = "comic.ttf"
 font = pygame.font.Font(font1, 40)
 
 
@@ -31,7 +32,7 @@ def new_word():
     y_cor = 200  # y-cor
     word_speed += 0.10
     yourword = ''
-    words1 = "/Users/tovare/MainChi/Chi/Games/words.txt"
+    words1 = "words.txt"
     words = open(words1).read().split(', ')
     displayword = random.choice(words)
 
@@ -81,13 +82,13 @@ while True:
         game_start = False
     game_over = False
 
-    bg2 = "/Users/tovare/MainChi/Chi/Games/teacher-background.jpg"
+    bg2 = "teacher-background.jpg"
     background = pygame.image.load(bg1)
     background = pygame.transform.scale(background, (WIDTH, HEIGHT))
-    character1 = "/Users/tovare/MainChi/Chi/Games/hariboBag.png"
+    character1 = "hariboBag.png"
     character = pygame.image.load(character1)
-    character = pygame.transform.scale(character, (50, 50))
-    wood1 = "/Users/tovare/MainChi/Chi/Games/wood-.png"
+    character = pygame.transform.scale(character, (99o, 50))
+    wood1 = "wood-.png"
     wood = pygame.image.load(wood1)
     wood = pygame.transform.scale(wood, (90, 50))
 
